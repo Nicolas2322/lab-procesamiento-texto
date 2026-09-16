@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+# El corpus preprocesado se regenera ejecutando el notebook 01 (contiene el texto completo de las noticias)
+notebooks/resultados/*.csv.gz

@@ -1,0 +1,153 @@
+{
+  "corpus": {
+    "Documentos (noticias)": 998,
+    "Oraciones": 11755,
+    "Tokens (según CoNLL)": 369171,
+    "Tokens por noticia (mediana)": 313,
+    "Tokens por noticia (máximo)": 2344,
+    "pendiente_zipf": -0.949
+  },
+  "keras": {
+    "vocabulario": 25987,
+    "tipos_con_signo_pegado": 15
+  },
+  "normalizacion": {
+    "E0 · texto crudo, separado por espacios": {
+      "tokens": 323469,
+      "tipos": 43553
+    },
+    "E1 · tokenización (signos separados)": {
+      "tokens": 373810,
+      "tipos": 30720
+    },
+    "E2 · minúsculas": {
+      "tokens": 373810,
+      "tipos": 27624
+    },
+    "E3 · sin signos de puntuación": {
+      "tokens": 321918,
+      "tipos": 27604
+    },
+    "E4 · números → <NUM>": {
+      "tokens": 321918,
+      "tipos": 24956
+    },
+    "E5 · sin cabecera de agencia": {
+      "tokens": 316749,
+      "tipos": 24840
+    }
+  },
+  "cabecera": {
+    "efe": [
+      1418,
+      409
+    ],
+    "may": [
+      1035,
+      71
+    ]
+  },
+  "minusculas_entidades": {
+    "formas_fusionadas": 613,
+    "proporcion_tokens_entidad": 0.216
+  },
+  "tildes": {
+    "tipos_antes": 24840,
+    "tipos_despues": 24312,
+    "distinción perdida": {
+      "grupos": 59,
+      "tokens": 57704
+    },
+    "variante ortográfica": {
+      "grupos": 462,
+      "tokens": 13259
+    }
+  },
+  "stopwords": {
+    "Laboratorio de clase (inglés)": {
+      "tokens_eliminados": "2.0 %"
+    },
+    "NLTK (español)": {
+      "tokens_eliminados": "45.7 %",
+      "tokens_contenido": 2222,
+      "proporcion_contenido": 0.0154
+    },
+    "spaCy (español)": {
+      "tokens_eliminados": "52.0 %",
+      "tokens_contenido": 11504,
+      "proporcion_contenido": 0.0699
+    },
+    "NLTK sin negaciones": {
+      "tokens_eliminados": "45.0 %"
+    }
+  },
+  "stemming": {
+    "tipos_palabras": 24636,
+    "tipos_raices": 13060,
+    "reduccion": 0.4699,
+    "hapax_palabras": 10565,
+    "hapax_raices": 4710
+  },
+  "lematizacion": {
+    "exactitud_contexto": 0.8333,
+    "exactitud_aislada": 0.7619,
+    "por_grupo": {
+      "derivación": {
+        "casos": 4,
+        "contexto": 1.0,
+        "aislada": 1.0
+      },
+      "enclíticos": {
+        "casos": 3,
+        "contexto": 0.0,
+        "aislada": 0.0
+      },
+      "flexión nominal": {
+        "casos": 11,
+        "contexto": 0.909,
+        "aislada": 1.0
+      },
+      "homografía": {
+        "casos": 11,
+        "contexto": 0.727,
+        "aislada": 0.545
+      },
+      "verbo irregular": {
+        "casos": 6,
+        "contexto": 1.0,
+        "aislada": 1.0
+      },
+      "verbo regular": {
+        "casos": 7,
+        "contexto": 1.0,
+        "aislada": 0.714
+      }
+    },
+    "tokens_por_segundo": 22683,
+    "tokens_lema_compuesto": 777,
+    "tokens_lema_inexistente": 565,
+    "tokens_contenido": 164491
+  },
+  "comparacion": {
+    "tipos": {
+      "palabras": 24552,
+      "raices": 12992,
+      "lemas": 17670
+    },
+    "tipos_reales": {
+      "palabras": 0.8551,
+      "raices": 0.3452,
+      "lemas": 0.7596
+    },
+    "tokens_reales": {
+      "palabras": 0.9553,
+      "raices": 0.687,
+      "lemas": 0.9476
+    },
+    "mezcla_raices": 0.6581,
+    "velocidad": {
+      "stemming": 77677,
+      "lematizacion": 22683
+    }
+  }
+}

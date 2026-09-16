@@ -1,0 +1,9 @@
+# Notebook 01
+nltk>=3.8
+spacy>=3.7
+tensorflow>=2.15          # solo para reproducir el Tokenizer del laboratorio de clase
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+notebook>=7.0
+# Modelo de spaCy (se instala aparte): python -m spacy download es_core_news_md
