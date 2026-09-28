@@ -1,0 +1,312 @@
+{
+  "datos": {
+    "Noticias del corpus": 998,
+    "Preguntas de QA": 37,
+    "Preguntas sin respuesta": 4,
+    "Noticias con preguntas": 8,
+    "Noticias para resumen": 12,
+    "Oraciones útiles por noticia (mediana)": 10,
+    "Oraciones para traducir": 16
+  },
+  "qa_recuperacion": {
+    "tfidf": {
+      "@1": 0.8182,
+      "@2": 0.9394,
+      "@3": 0.9697,
+      "@5": 1.0
+    },
+    "bm25": {
+      "@1": 0.8485,
+      "@2": 0.9394,
+      "@3": 0.9697,
+      "@5": 1.0
+    }
+  },
+  "qa_global": {
+    "em": 59.46,
+    "f1": 65.05,
+    "n": 37
+  },
+  "qa_umbral": [
+    {
+      "umbral": 0.0,
+      "EM": 56.76,
+      "F1": 65.25,
+      "abstenciones correctas": 1,
+      "abstenciones indebidas": 0
+    },
+    {
+      "umbral": 0.05,
+      "EM": 56.76,
+      "F1": 65.25,
+      "abstenciones correctas": 1,
+      "abstenciones indebidas": 0
+    },
+    {
+      "umbral": 0.1,
+      "EM": 56.76,
+      "F1": 65.25,
+      "abstenciones correctas": 1,
+      "abstenciones indebidas": 0
+    },
+    {
+      "umbral": 0.15,
+      "EM": 56.76,
+      "F1": 65.25,
+      "abstenciones correctas": 1,
+      "abstenciones indebidas": 0
+    },
+    {
+      "umbral": 0.2,
+      "EM": 56.76,
+      "F1": 65.25,
+      "abstenciones correctas": 1,
+      "abstenciones indebidas": 0
+    },
+    {
+      "umbral": 0.25,
+      "EM": 56.76,
+      "F1": 65.25,
+      "abstenciones correctas": 1,
+      "abstenciones indebidas": 1
+    },
+    {
+      "umbral": 0.3,
+      "EM": 59.46,
+      "F1": 67.95,
+      "abstenciones correctas": 2,
+      "abstenciones indebidas": 1
+    },
+    {
+      "umbral": 0.35,
+      "EM": 59.46,
+      "F1": 65.05,
+      "abstenciones correctas": 4,
+      "abstenciones indebidas": 6
+    },
+    {
+      "umbral": 0.4,
+      "EM": 59.46,
+      "F1": 65.05,
+      "abstenciones correctas": 4,
+      "abstenciones indebidas": 7
+    },
+    {
+      "umbral": 0.45,
+      "EM": 48.65,
+      "F1": 52.43,
+      "abstenciones correctas": 4,
+      "abstenciones indebidas": 12
+    },
+    {
+      "umbral": 0.5,
+      "EM": 45.95,
+      "F1": 48.83,
+      "abstenciones correctas": 4,
+      "abstenciones indebidas": 16
+    },
+    {
+      "umbral": 0.55,
+      "EM": 35.14,
+      "F1": 36.22,
+      "abstenciones correctas": 4,
+      "abstenciones indebidas": 21
+    },
+    {
+      "umbral": 0.6,
+      "EM": 24.32,
+      "F1": 25.41,
+      "abstenciones correctas": 4,
+      "abstenciones indebidas": 25
+    },
+    {
+      "umbral": 0.65,
+      "EM": 10.81,
+      "F1": 10.81,
+      "abstenciones correctas": 4,
+      "abstenciones indebidas": 33
+    }
+  ],
+  "qa_por_tipo": {
+    "cantidad": {
+      "EM": 69.2,
+      "F1": 77.4,
+      "preguntas": 13
+    },
+    "causa": {
+      "EM": 0.0,
+      "F1": 0.0,
+      "preguntas": 1
+    },
+    "fecha": {
+      "EM": 60.0,
+      "F1": 60.0,
+      "preguntas": 5
+    },
+    "lugar": {
+      "EM": 40.0,
+      "F1": 46.7,
+      "preguntas": 5
+    },
+    "otro": {
+      "EM": 20.0,
+      "F1": 33.3,
+      "preguntas": 5
+    },
+    "persona": {
+      "EM": 75.0,
+      "F1": 75.0,
+      "preguntas": 4
+    },
+    "sin respuesta": {
+      "EM": 100.0,
+      "F1": 100.0,
+      "preguntas": 4
+    }
+  },
+  "qa_metodos": {
+    "tfidf": {
+      "em": 59.46,
+      "f1": 65.05,
+      "n": 37
+    },
+    "bm25": {
+      "em": 56.76,
+      "f1": 65.25,
+      "n": 37
+    }
+  },
+  "qa_errores": {
+    "correcta": 22,
+    "abstención indebida": 7,
+    "frontera del tramo": 3,
+    "extracción incorrecta": 3,
+    "recuperación incorrecta": 2
+  },
+  "resumen": {
+    "Lead-1": {
+      "compresión": 0.0984,
+      "cobertura entidades": 0.2115,
+      "cobertura términos": 0.575,
+      "redundancia": 0.0,
+      "ROUGE-1": 0.5071,
+      "ROUGE-2": 0.5007,
+      "ROUGE-L": 0.5071
+    },
+    "Lead-3": {
+      "compresión": 0.2914,
+      "cobertura entidades": 0.5092,
+      "cobertura términos": 0.825,
+      "redundancia": 0.0685,
+      "ROUGE-1": 1.0,
+      "ROUGE-2": 1.0,
+      "ROUGE-L": 1.0
+    },
+    "TextRank": {
+      "compresión": 0.2876,
+      "cobertura entidades": 0.4076,
+      "cobertura términos": 0.85,
+      "redundancia": 0.1372,
+      "ROUGE-1": 0.6607,
+      "ROUGE-2": 0.5371,
+      "ROUGE-L": 0.5952
+    },
+    "LexRank": {
+      "compresión": 0.3037,
+      "cobertura entidades": 0.4642,
+      "cobertura términos": 0.8,
+      "redundancia": 0.1157,
+      "ROUGE-1": 0.6108,
+      "ROUGE-2": 0.4437,
+      "ROUGE-L": 0.4987
+    },
+    "SumBasic": {
+      "compresión": 0.2702,
+      "cobertura entidades": 0.4274,
+      "cobertura términos": 0.95,
+      "redundancia": 0.0389,
+      "ROUGE-1": 0.6468,
+      "ROUGE-2": 0.5089,
+      "ROUGE-L": 0.511
+    },
+    "Posición+longitud": {
+      "compresión": 0.3048,
+      "cobertura entidades": 0.5324,
+      "cobertura términos": 0.825,
+      "redundancia": 0.0775,
+      "ROUGE-1": 0.9515,
+      "ROUGE-2": 0.943,
+      "ROUGE-L": 0.9484
+    }
+  },
+  "resumen_solape_lead3": {
+    "Lead-1": 0.333,
+    "Lead-3": 1.0,
+    "TextRank": 0.472,
+    "LexRank": 0.361,
+    "SumBasic": 0.472,
+    "Posición+longitud": 0.917
+  },
+  "traduccion_diccionario": {
+    "entradas": 330,
+    "locuciones": 15,
+    "palabras_fuera_del_diccionario": [],
+    "cobertura_lexica": 1.0
+  },
+  "traduccion_por_categoria": [
+    {
+      "categoría": "todas",
+      "oraciones": 16,
+      "bleu": 49.78,
+      "chrf": 75.34
+    },
+    {
+      "categoría": "noticia",
+      "oraciones": 7,
+      "bleu": 61.37,
+      "chrf": 82.28
+    },
+    {
+      "categoría": "entidad_cifra",
+      "oraciones": 5,
+      "bleu": 55.02,
+      "chrf": 77.07
+    },
+    {
+      "categoría": "modismo",
+      "oraciones": 4,
+      "bleu": 11.59,
+      "chrf": 52.46
+    }
+  ],
+  "traduccion_ic95": [
+    34.98,
+    62.69
+  ],
+  "traduccion_ablaciones": {
+    "completo": {
+      "bleu": 49.77692035956401,
+      "chrf": 75.3440202216135
+    },
+    "sin reordenar sust.+adj.": {
+      "bleu": 44.89876189797866,
+      "chrf": 72.72352693506483
+    },
+    "sin locuciones": {
+      "bleu": 44.26556239561871,
+      "chrf": 73.46732579437143
+    },
+    "sin morfología (solo diccionario)": {
+      "bleu": 23.45680667663029,
+      "chrf": 66.47866666499246
+    }
+  },
+  "seq2seq": {
+    "parametros": 86892,
+    "bleu_entrenamiento": 85.77,
+    "bleu_prueba": 2.49,
+    "bleu_prueba_reglas": 14.26,
+    "perdida_final": 0.0024,
+    "perdida_validacion_final": 9.8595
+  }
+}

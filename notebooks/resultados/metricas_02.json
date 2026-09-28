@@ -1,0 +1,230 @@
+{
+  "matriz": {
+    "documentos": 998,
+    "terminos": 17357,
+    "tokens": 163907,
+    "no_nulas": 119053,
+    "dispersion": 0.99313,
+    "longitud_media": 164.2,
+    "longitud_min": 9,
+    "longitud_max": 1078
+  },
+  "sesgo_longitud": {
+    "consulta": [
+      "gobierno",
+      "presidente",
+      "año"
+    ],
+    "df_consulta": {
+      "gobierno": 273,
+      "presidente": 274,
+      "año": 451
+    },
+    "correlacion": {
+      "cruda": 0.569,
+      "binaria": 0.43,
+      "relativa": -0.228,
+      "sublineal": 0.539,
+      "l2": 0.061
+    },
+    "longitud_mediana_top10": {
+      "cruda": 530,
+      "binaria": 282,
+      "relativa": 76,
+      "sublineal": 441,
+      "l2": 150
+    },
+    "longitud_mediana_corpus": 138
+  },
+  "idf": {
+    "diferencia_maxima_sklearn": 0.0,
+    "idf_min": 1.2774,
+    "idf_max": 7.2136,
+    "grupos": {
+      "stopwords": {
+        "tipos": 85,
+        "% del vocabulario": 0.5,
+        "df medio": 250.9,
+        "idf medio": 4.0,
+        "% de tokens": 44.8
+      },
+      "términos temáticos (df ≥ 2)": {
+        "tipos": 9001,
+        "% del vocabulario": 51.6,
+        "df medio": 12.5,
+        "idf medio": 5.98,
+        "% de tokens": 51.8
+      },
+      "hapax (df = 1)": {
+        "tipos": 8376,
+        "% del vocabulario": 48.0,
+        "df medio": 1.0,
+        "idf medio": 7.21,
+        "% de tokens": 3.4
+      }
+    },
+    "hapax_vocabulario_limpio": 8358
+  },
+  "tfidf": {
+    "docs_cambia_top1": 518,
+    "proporcion_cambia_top1": 0.519,
+    "solapamiento_medio_top10": 6.46,
+    "caso_199": {
+      "ecuality": {
+        "tf": 7,
+        "df": 1,
+        "idf": 7.21,
+        "tf·idf (L2)": 0.455,
+        "puesto TF": 2,
+        "puesto TF-IDF": 2
+      },
+      "diversia": {
+        "tf": 7,
+        "df": 1,
+        "idf": 7.21,
+        "tf·idf (L2)": 0.455,
+        "puesto TF": 1,
+        "puesto TF-IDF": 1
+      },
+      "tienda": {
+        "tf": 5,
+        "df": 10,
+        "idf": 5.51,
+        "tf·idf (L2)": 0.248,
+        "puesto TF": 3,
+        "puesto TF-IDF": 3
+      },
+      "alcosto": {
+        "tf": 3,
+        "df": 1,
+        "idf": 7.21,
+        "tf·idf (L2)": 0.195,
+        "puesto TF": 10,
+        "puesto TF-IDF": 4
+      },
+      "millón": {
+        "tf": 4,
+        "df": 234,
+        "idf": 2.45,
+        "tf·idf (L2)": 0.088,
+        "puesto TF": 4,
+        "puesto TF-IDF": 16
+      },
+      "año": {
+        "tf": 3,
+        "df": 451,
+        "idf": 1.79,
+        "tf·idf (L2)": 0.049,
+        "puesto TF": 11,
+        "puesto TF-IDF": 73
+      },
+      "empresa": {
+        "tf": 1,
+        "df": 165,
+        "idf": 2.79,
+        "tf·idf (L2)": 0.025,
+        "puesto TF": 106,
+        "puesto TF-IDF": 155
+      }
+    }
+  },
+  "recorte": {
+    "min_df = 1": {
+      "vocabulario": 17357,
+      "% del vocabulario original": 100.0,
+      "% de tokens conservados": 100.0,
+      "dispersión": 0.9931
+    },
+    "min_df = 2": {
+      "vocabulario": 8999,
+      "% del vocabulario original": 51.8,
+      "% de tokens conservados": 93.5,
+      "dispersión": 0.9877
+    },
+    "min_df = 3": {
+      "vocabulario": 6217,
+      "% del vocabulario original": 35.8,
+      "% de tokens conservados": 89.1,
+      "dispersión": 0.9831
+    },
+    "min_df = 5": {
+      "vocabulario": 4098,
+      "% del vocabulario original": 23.6,
+      "% de tokens conservados": 83.4,
+      "dispersión": 0.976
+    },
+    "min_df = 10": {
+      "vocabulario": 2317,
+      "% del vocabulario original": 13.3,
+      "% de tokens conservados": 73.9,
+      "dispersión": 0.9627
+    },
+    "min_df = 25": {
+      "vocabulario": 1034,
+      "% del vocabulario original": 6.0,
+      "% de tokens conservados": 57.8,
+      "dispersión": 0.9353
+    },
+    "min_df = 2, max_df = 0.5": {
+      "vocabulario": 8997,
+      "% del vocabulario original": 51.8,
+      "% de tokens conservados": 91.9,
+      "dispersión": 0.9878
+    },
+    "min_df = 2, max_df = 0.3": {
+      "vocabulario": 8988,
+      "% del vocabulario original": 51.8,
+      "% de tokens conservados": 88.6,
+      "dispersión": 0.9882
+    },
+    "min_df = 2, max_df = 0.1": {
+      "vocabulario": 8843,
+      "% del vocabulario original": 50.9,
+      "% de tokens conservados": 69.2,
+      "dispersión": 0.9904
+    }
+  },
+  "recuperacion": {
+    "TF cruda (producto punto, sin normalizar)": {
+      "precisión@5": 0.66,
+      "precisión@10": 0.52
+    },
+    "TF cruda + coseno": {
+      "precisión@5": 0.7857,
+      "precisión@10": 0.6429
+    },
+    "TF binaria + coseno": {
+      "precisión@5": 0.7914,
+      "precisión@10": 0.6414
+    },
+    "TF-IDF (producto punto, sin normalizar)": {
+      "precisión@5": 0.7429,
+      "precisión@10": 0.6043
+    },
+    "TF-IDF + coseno": {
+      "precisión@5": 0.8229,
+      "precisión@10": 0.6857
+    },
+    "TF-IDF sublineal + coseno": {
+      "precisión@5": 0.8486,
+      "precisión@10": 0.7
+    },
+    "Azar (13 relevantes de 69)": {
+      "precisión@5": 0.1884,
+      "precisión@10": 0.1884
+    },
+    "_azar": 0.1884
+  },
+  "bm25": {
+    "p5": 0.8314,
+    "k1": 1.5,
+    "b": 0.75,
+    "sensibilidad_b": {
+      "0.0": 0.6829,
+      "0.25": 0.7514,
+      "0.5": 0.78,
+      "0.75": 0.8314,
+      "1.0": 0.8429
+    }
+  }
+}

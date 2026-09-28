@@ -1,0 +1,606 @@
+{
+  "corpus_generacion": {
+    "lineas": 1978,
+    "palabras": 57172,
+    "tokens_tokenizador": 55872,
+    "vocabulario_completo": 9142,
+    "vocabulario_usado": 5000,
+    "cobertura_tokens": 0.9259
+  },
+  "ngramas": {
+    "tabla": [
+      {
+        "n": 2,
+        "k": 0.01,
+        "contextos": 4937,
+        "perplejidad (entrenamiento)": 57.95,
+        "perplejidad (validación)": 253.68
+      },
+      {
+        "n": 2,
+        "k": 0.1,
+        "contextos": 4937,
+        "perplejidad (entrenamiento)": 175.3,
+        "perplejidad (validación)": 407.22
+      },
+      {
+        "n": 2,
+        "k": 1.0,
+        "contextos": 4937,
+        "perplejidad (entrenamiento)": 707.07,
+        "perplejidad (validación)": 963.53
+      },
+      {
+        "n": 3,
+        "k": 0.01,
+        "contextos": 22033,
+        "perplejidad (entrenamiento)": 40.06,
+        "perplejidad (validación)": 631.53
+      },
+      {
+        "n": 3,
+        "k": 0.1,
+        "contextos": 22033,
+        "perplejidad (entrenamiento)": 265.99,
+        "perplejidad (validación)": 1199.87
+      },
+      {
+        "n": 3,
+        "k": 1.0,
+        "contextos": 22033,
+        "perplejidad (entrenamiento)": 1535.81,
+        "perplejidad (validación)": 2513.87
+      }
+    ],
+    "vocabulario": 4937,
+    "contextos_bigramas": 5001,
+    "contextos_trigramas": 23584,
+    "ppl_validacion_bigramas": 407.22,
+    "ppl_validacion_trigramas": 1199.87,
+    "ppl_entrenamiento_bigramas": 175.3,
+    "ppl_entrenamiento_trigramas": 265.99
+  },
+  "lstm": {
+    "parametros": 1408905,
+    "maxlen": 12,
+    "epocas": 10,
+    "segundos_entrenamiento": 93.7,
+    "ejemplos_entrenamiento": 48510,
+    "ejemplos_validacion": 5384,
+    "perdida_entrenamiento_mejor_epoca": 3.7863,
+    "mejor_perdida_validacion": 5.2822,
+    "mejor_epoca": 7,
+    "exactitud_entrenamiento_mejor_epoca": 0.2654,
+    "exactitud_validacion_mejor_epoca": 0.2101,
+    "perdida_ultima_epoca_entrenamiento": 2.9975,
+    "perdida_ultima_epoca_validacion": 5.4677,
+    "ppl_validacion": 196.8,
+    "ppl_validacion_ultima_epoca": 236.92
+  },
+  "generacion": {
+    "tabla": [
+      {
+        "modelo": "red recurrente",
+        "estrategia": "voraz (greedy)",
+        "distinct_1": 0.2891,
+        "distinct_2": 0.432,
+        "repeticion_bigramas": 0.456,
+        "repeticion_trigramas": 0.3197,
+        "longitud": 42.6667
+      },
+      {
+        "modelo": "red recurrente",
+        "estrategia": "T = 0,2",
+        "distinct_1": 0.2773,
+        "distinct_2": 0.496,
+        "repeticion_bigramas": 0.284,
+        "repeticion_trigramas": 0.1393,
+        "longitud": 42.6667
+      },
+      {
+        "modelo": "red recurrente",
+        "estrategia": "T = 0,7",
+        "distinct_1": 0.4766,
+        "distinct_2": 0.824,
+        "repeticion_bigramas": 0.048,
+        "repeticion_trigramas": 0.0,
+        "longitud": 42.6667
+      },
+      {
+        "modelo": "red recurrente",
+        "estrategia": "T = 1,2",
+        "distinct_1": 0.6445,
+        "distinct_2": 0.956,
+        "repeticion_bigramas": 0.004,
+        "repeticion_trigramas": 0.0,
+        "longitud": 42.6667
+      },
+      {
+        "modelo": "red recurrente",
+        "estrategia": "top-k = 10, T = 1,0",
+        "distinct_1": 0.4336,
+        "distinct_2": 0.792,
+        "repeticion_bigramas": 0.06,
+        "repeticion_trigramas": 0.0041,
+        "longitud": 42.6667
+      },
+      {
+        "modelo": "trigramas",
+        "estrategia": "voraz (greedy)",
+        "distinct_1": 0.569,
+        "distinct_2": 0.6364,
+        "repeticion_bigramas": 0.3636,
+        "repeticion_trigramas": 0.3654,
+        "longitud": 19.3333
+      },
+      {
+        "modelo": "trigramas",
+        "estrategia": "T = 0,2",
+        "distinct_1": 0.4779,
+        "distinct_2": 0.7077,
+        "repeticion_bigramas": 0.1538,
+        "repeticion_trigramas": 0.1371,
+        "longitud": 22.6667
+      },
+      {
+        "modelo": "trigramas",
+        "estrategia": "T = 0,7",
+        "distinct_1": 0.4722,
+        "distinct_2": 0.7826,
+        "repeticion_bigramas": 0.1087,
+        "repeticion_trigramas": 0.053,
+        "longitud": 24.0
+      },
+      {
+        "modelo": "trigramas",
+        "estrategia": "T = 1,2",
+        "distinct_1": 0.6275,
+        "distinct_2": 0.9456,
+        "repeticion_bigramas": 0.0,
+        "repeticion_trigramas": 0.0,
+        "longitud": 25.5
+      },
+      {
+        "modelo": "trigramas",
+        "estrategia": "top-k = 10, T = 1,0",
+        "distinct_1": 0.5984,
+        "distinct_2": 0.8966,
+        "repeticion_bigramas": 0.0259,
+        "repeticion_trigramas": 0.0,
+        "longitud": 20.3333
+      }
+    ]
+  },
+  "llm": {
+    "registros": 10,
+    "tareas": [
+      "continuación",
+      "reescritura",
+      "resumen en una frase",
+      "titular"
+    ],
+    "estrategias": [
+      "cadena de pensamiento",
+      "few-shot",
+      "zero-shot"
+    ],
+    "comparacion": [
+      {
+        "generador": "trigramas (top-k = 10)",
+        "distinct_1": 0.5984,
+        "distinct_2": 0.8966,
+        "repeticion_trigramas": 0.0,
+        "longitud": 20.3333,
+        "fuera_del_vocabulario_5k": 0.0
+      },
+      {
+        "generador": "red recurrente (top-k = 10)",
+        "distinct_1": 0.4336,
+        "distinct_2": 0.792,
+        "repeticion_trigramas": 0.0041,
+        "longitud": 42.6667,
+        "fuera_del_vocabulario_5k": 0.0
+      },
+      {
+        "generador": "LLM instruido (registro)",
+        "distinct_1": 0.5427,
+        "distinct_2": 0.9189,
+        "repeticion_trigramas": 0.0062,
+        "longitud": 50.3,
+        "fuera_del_vocabulario_5k": 0.165
+      }
+    ],
+    "procedencia": "Claude Opus 5 (Anthropic), 27/09/2026, modo conversacional; no ejecutado desde el notebook"
+  },
+  "mineria": {
+    "documentos": 998,
+    "tokens_lematizados": 306494,
+    "tokens_tematicos": 121537,
+    "vocabulario_tematico": 14699,
+    "ruido_may_efe": {
+      "frecuencia": 59,
+      "posicion_sin_filtrar": 6
+    },
+    "bigramas_contenido": [
+      {
+        "n-grama": "millón pesetas",
+        "frecuencia": 203
+      },
+      {
+        "n-grama": "millón dólares",
+        "frecuencia": 135
+      },
+      {
+        "n-grama": "real madrid",
+        "frecuencia": 109
+      },
+      {
+        "n-grama": "secretario general",
+        "frecuencia": 62
+      },
+      {
+        "n-grama": "medio ambiente",
+        "frecuencia": 59
+      },
+      {
+        "n-grama": "unión europea",
+        "frecuencia": 55
+      },
+      {
+        "n-grama": "rueda prensa",
+        "frecuencia": 55
+      },
+      {
+        "n-grama": "sur líbano",
+        "frecuencia": 54
+      },
+      {
+        "n-grama": "josé maría",
+        "frecuencia": 52
+      },
+      {
+        "n-grama": "director general",
+        "frecuencia": 52
+      }
+    ],
+    "trigramas_contenido": [
+      {
+        "n-grama": "josé maría aznar",
+        "frecuencia": 30
+      },
+      {
+        "n-grama": "final liga campeones",
+        "frecuencia": 29
+      },
+      {
+        "n-grama": "real madrid valencia",
+        "frecuencia": 22
+      },
+      {
+        "n-grama": "gobierno josé maría",
+        "frecuencia": 18
+      },
+      {
+        "n-grama": "banco central europeo",
+        "frecuencia": 15
+      },
+      {
+        "n-grama": "presidente gobierno josé",
+        "frecuencia": 15
+      },
+      {
+        "n-grama": "israelí sur líbano",
+        "frecuencia": 13
+      },
+      {
+        "n-grama": "primero trimestre año",
+        "frecuencia": 13
+      },
+      {
+        "n-grama": "don juan carlos",
+        "frecuencia": 13
+      },
+      {
+        "n-grama": "millón pesetas millón",
+        "frecuencia": 13
+      }
+    ],
+    "colocaciones": {
+      "min_frecuencia": 10,
+      "candidatos": 259,
+      "pmi_top10": [
+        "wall street",
+        "bellas artes",
+        "intentona golpista",
+        "cascos azules",
+        "dow jones",
+        "corín tellado",
+        "reino unido",
+        "france telecom",
+        "castilla-la mancha",
+        "suelo rústico"
+      ],
+      "log_verosimilitud_top10": [
+        "real madrid",
+        "sin embargo",
+        "medio ambiente",
+        "hoy martes",
+        "unión europea",
+        "sao paulo",
+        "secretario general",
+        "sierra leona",
+        "nueva york",
+        "informó hoy"
+      ]
+    },
+    "lda_barrido": [
+      {
+        "temas": 5,
+        "coherencia c_v": 0.4351,
+        "AMI frente a lo anotado": 0.8452,
+        "pureza": 0.8714
+      },
+      {
+        "temas": 6,
+        "coherencia c_v": 0.4674,
+        "AMI frente a lo anotado": 0.6729,
+        "pureza": 0.7857
+      },
+      {
+        "temas": 7,
+        "coherencia c_v": 0.4766,
+        "AMI frente a lo anotado": 0.6056,
+        "pureza": 0.7857
+      },
+      {
+        "temas": 8,
+        "coherencia c_v": 0.4788,
+        "AMI frente a lo anotado": 0.6322,
+        "pureza": 0.8
+      }
+    ],
+    "lda": {
+      "temas": 6,
+      "coherencia_cv": 0.4674,
+      "ami": 0.6729,
+      "pureza": 0.7857,
+      "prob_media_dominante": 0.789,
+      "tabla": [
+        {
+          "tema": 0,
+          "etiqueta interpretativa": "Deporte de competición",
+          "palabras principales": "equipo, madrid, partido, primero, real, final, próximo, jugador, club, liga",
+          "noticias": 177
+        },
+        {
+          "tema": 1,
+          "etiqueta interpretativa": "Economía de empresa y sector",
+          "palabras principales": "millón, pesetas, empresa, precio, sector, mercado, nuevo, país, español, gobierno",
+          "noticias": 144
+        },
+        {
+          "tema": 2,
+          "etiqueta interpretativa": "Vida local, obra pública y sucesos",
+          "palabras principales": "centro, obra, día, pesetas, trabajo, parte, pasado, próximo, primero, caso",
+          "noticias": 299
+        },
+        {
+          "tema": 3,
+          "etiqueta interpretativa": "Política institucional",
+          "palabras principales": "gobierno, presidente, país, grupo, ministro, ley, partido, comisión, parte, político",
+          "noticias": 167
+        },
+        {
+          "tema": 4,
+          "etiqueta interpretativa": "Conflicto internacional (Líbano, Oriente Próximo)",
+          "palabras principales": "israelí, gobierno, sur, país, ejército, grupo, zona, líbano, fuente, seguridad",
+          "noticias": 112
+        },
+        {
+          "tema": 5,
+          "etiqueta interpretativa": "Mercados financieros y meteorología",
+          "palabras principales": "millón, dólares, punto, banco, nuboso, mercado, pasado, país, euros, nuevo",
+          "noticias": 99
+        }
+      ]
+    },
+    "kmedias_barrido": [
+      {
+        "grupos": 5,
+        "silueta": 0.0405,
+        "AMI frente a lo anotado": 0.8901,
+        "pureza": 0.9429
+      },
+      {
+        "grupos": 6,
+        "silueta": 0.0418,
+        "AMI frente a lo anotado": 0.7725,
+        "pureza": 0.9
+      },
+      {
+        "grupos": 7,
+        "silueta": 0.0443,
+        "AMI frente a lo anotado": 0.8241,
+        "pureza": 0.9286
+      },
+      {
+        "grupos": 8,
+        "silueta": 0.0458,
+        "AMI frente a lo anotado": 0.7658,
+        "pureza": 0.9143
+      }
+    ],
+    "kmedias": {
+      "grupos": 5,
+      "ami": 0.8901,
+      "pureza": 0.9429,
+      "silueta": 0.0405,
+      "varianza_lsa": 0.3348,
+      "tamanos": [
+        160,
+        159,
+        318,
+        221,
+        140
+      ],
+      "etiquetas": {
+        "0": "Mercados, empresa y banca",
+        "1": "Deportes",
+        "2": "Vida local, obra pública y cultura",
+        "3": "Política institucional",
+        "4": "Sucesos y justicia"
+      },
+      "terminos": {
+        "0": [
+          "millón",
+          "dólares",
+          "mercado",
+          "precio",
+          "sector",
+          "empresa",
+          "banco",
+          "bolsa",
+          "punto",
+          "euros"
+        ],
+        "1": [
+          "equipo",
+          "jugador",
+          "liga",
+          "partido",
+          "club",
+          "temporada",
+          "final",
+          "real",
+          "primero",
+          "madrid"
+        ],
+        "2": [
+          "ayuntamiento",
+          "obra",
+          "pesetas",
+          "centro",
+          "municipal",
+          "millón",
+          "nuevo",
+          "proyecto",
+          "trabajo",
+          "gobierno"
+        ],
+        "3": [
+          "presidente",
+          "gobierno",
+          "país",
+          "ministro",
+          "partido",
+          "político",
+          "portavoz",
+          "general",
+          "reunión",
+          "elección"
+        ],
+        "4": [
+          "policía",
+          "fuente",
+          "civil",
+          "acusado",
+          "vehículo",
+          "víctima",
+          "agente",
+          "caso",
+          "persona",
+          "hora"
+        ]
+      }
+    },
+    "lemas_frecuentes": [
+      {
+        "lema": "año",
+        "frecuencia": 834
+      },
+      {
+        "lema": "millón",
+        "frecuencia": 626
+      },
+      {
+        "lema": "gobierno",
+        "frecuencia": 593
+      },
+      {
+        "lema": "presidente",
+        "frecuencia": 523
+      },
+      {
+        "lema": "primero",
+        "frecuencia": 505
+      },
+      {
+        "lema": "país",
+        "frecuencia": 471
+      },
+      {
+        "lema": "próximo",
+        "frecuencia": 449
+      },
+      {
+        "lema": "nuevo",
+        "frecuencia": 443
+      },
+      {
+        "lema": "grupo",
+        "frecuencia": 426
+      },
+      {
+        "lema": "parte",
+        "frecuencia": 398
+      },
+      {
+        "lema": "día",
+        "frecuencia": 391
+      },
+      {
+        "lema": "pasado",
+        "frecuencia": 387
+      },
+      {
+        "lema": "pesetas",
+        "frecuencia": 365
+      },
+      {
+        "lema": "empresa",
+        "frecuencia": 363
+      },
+      {
+        "lema": "madrid",
+        "frecuencia": 359
+      },
+      {
+        "lema": "partido",
+        "frecuencia": 355
+      },
+      {
+        "lema": "general",
+        "frecuencia": 309
+      },
+      {
+        "lema": "último",
+        "frecuencia": 306
+      },
+      {
+        "lema": "español",
+        "frecuencia": 300
+      },
+      {
+        "lema": "españa",
+        "frecuencia": 286
+      }
+    ],
+    "agenda": {
+      "Mercados, empresa y banca": 160,
+      "Deportes": 159,
+      "Vida local, obra pública y cultura": 318,
+      "Política institucional": 221,
+      "Sucesos y justicia": 140
+    }
+  }
+}

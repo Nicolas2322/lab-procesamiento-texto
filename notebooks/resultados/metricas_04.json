@@ -1,0 +1,755 @@
+{
+  "corpus": {
+    "Noticias": 998,
+    "Tokens (CoNLL)": 369171,
+    "Lemas de contenido": 164491,
+    "Lemas distintos": 17670
+  },
+  "evaluacion": {
+    "pares_sts": 26,
+    "fenomenos": 8,
+    "noticias_etiquetadas": 70,
+    "temas": 5
+  },
+  "sts_correlaciones": {
+    "TF-IDF": {
+      "Spearman": 0.2074,
+      "p (Spearman)": 0.3093,
+      "Pearson": -0.0092,
+      "coseno medio": 0.3493,
+      "coseno mín.": 0.0,
+      "coseno máx.": 1.0
+    },
+    "LSA": {
+      "Spearman": 0.358,
+      "p (Spearman)": 0.0726,
+      "Pearson": 0.3254,
+      "coseno medio": 0.5925,
+      "coseno mín.": -0.0001,
+      "coseno máx.": 1.0
+    },
+    "spaCy prom.": {
+      "Spearman": 0.5492,
+      "p (Spearman)": 0.0037,
+      "Pearson": 0.5072,
+      "coseno medio": 0.7009,
+      "coseno mín.": 0.0075,
+      "coseno máx.": 1.0
+    },
+    "Word2Vec prom.": {
+      "Spearman": 0.4463,
+      "p (Spearman)": 0.0223,
+      "Pearson": 0.4899,
+      "coseno medio": 0.7894,
+      "coseno mín.": 0.1791,
+      "coseno máx.": 1.0
+    },
+    "Word2Vec + SIF": {
+      "Spearman": 0.4726,
+      "p (Spearman)": 0.0148,
+      "Pearson": 0.5175,
+      "coseno medio": 0.589,
+      "coseno mín.": -0.4433,
+      "coseno máx.": 1.0
+    }
+  },
+  "sts_perfil_fenomeno": {
+    "brecha léxica": {
+      "humano": 0.974,
+      "TF-IDF": 0.045,
+      "LSA": 0.533,
+      "spaCy prom.": 0.769,
+      "Word2Vec prom.": 0.793,
+      "Word2Vec + SIF": 0.768
+    },
+    "paráfrasis": {
+      "humano": 0.957,
+      "TF-IDF": 0.427,
+      "LSA": 0.737,
+      "spaCy prom.": 0.794,
+      "Word2Vec prom.": 0.873,
+      "Word2Vec + SIF": 0.87
+    },
+    "detalle cambiado": {
+      "humano": 0.609,
+      "TF-IDF": 0.735,
+      "LSA": 0.813,
+      "spaCy prom.": 0.952,
+      "Word2Vec prom.": 0.921,
+      "Word2Vec + SIF": 0.893
+    },
+    "negación o antónimo": {
+      "humano": 0.326,
+      "TF-IDF": 0.755,
+      "LSA": 0.916,
+      "spaCy prom.": 0.857,
+      "Word2Vec prom.": 0.923,
+      "Word2Vec + SIF": 0.932
+    },
+    "roles invertidos": {
+      "humano": 0.326,
+      "TF-IDF": 1.0,
+      "LSA": 1.0,
+      "spaCy prom.": 1.0,
+      "Word2Vec prom.": 1.0,
+      "Word2Vec + SIF": 1.0
+    },
+    "mismo tema": {
+      "humano": 0.261,
+      "TF-IDF": 0.041,
+      "LSA": 0.321,
+      "spaCy prom.": 0.592,
+      "Word2Vec prom.": 0.631,
+      "Word2Vec + SIF": 0.639
+    },
+    "polisemia": {
+      "humano": 0.072,
+      "TF-IDF": 0.177,
+      "LSA": 0.491,
+      "spaCy prom.": 0.546,
+      "Word2Vec prom.": 0.629,
+      "Word2Vec + SIF": 0.508
+    },
+    "sin relación": {
+      "humano": 0.0,
+      "TF-IDF": 0.0,
+      "LSA": 0.024,
+      "spaCy prom.": 0.134,
+      "Word2Vec prom.": 0.186,
+      "Word2Vec + SIF": 0.107
+    }
+  },
+  "sts_error_por_fenomeno": {
+    "roles invertidos": {
+      "TF-IDF": 0.674,
+      "LSA": 0.674,
+      "spaCy prom.": 0.674,
+      "Word2Vec prom.": 0.674,
+      "Word2Vec + SIF": 0.674,
+      "promedio": 0.674
+    },
+    "negación o antónimo": {
+      "TF-IDF": 0.429,
+      "LSA": 0.59,
+      "spaCy prom.": 0.531,
+      "Word2Vec prom.": 0.596,
+      "Word2Vec + SIF": 0.606,
+      "promedio": 0.55
+    },
+    "polisemia": {
+      "TF-IDF": 0.105,
+      "LSA": 0.419,
+      "spaCy prom.": 0.474,
+      "Word2Vec prom.": 0.557,
+      "Word2Vec + SIF": 0.436,
+      "promedio": 0.398
+    },
+    "detalle cambiado": {
+      "TF-IDF": 0.127,
+      "LSA": 0.204,
+      "spaCy prom.": 0.343,
+      "Word2Vec prom.": 0.312,
+      "Word2Vec + SIF": 0.284,
+      "promedio": 0.254
+    },
+    "mismo tema": {
+      "TF-IDF": -0.219,
+      "LSA": 0.06,
+      "spaCy prom.": 0.331,
+      "Word2Vec prom.": 0.37,
+      "Word2Vec + SIF": 0.378,
+      "promedio": 0.184
+    },
+    "sin relación": {
+      "TF-IDF": 0.0,
+      "LSA": 0.024,
+      "spaCy prom.": 0.134,
+      "Word2Vec prom.": 0.186,
+      "Word2Vec + SIF": 0.107,
+      "promedio": 0.09
+    },
+    "paráfrasis": {
+      "TF-IDF": -0.529,
+      "LSA": -0.22,
+      "spaCy prom.": -0.163,
+      "Word2Vec prom.": -0.084,
+      "Word2Vec + SIF": -0.086,
+      "promedio": -0.216
+    },
+    "brecha léxica": {
+      "TF-IDF": -0.928,
+      "LSA": -0.441,
+      "spaCy prom.": -0.205,
+      "Word2Vec prom.": -0.18,
+      "Word2Vec + SIF": -0.206,
+      "promedio": -0.392
+    }
+  },
+  "recuperacion_p5": {
+    "TF-IDF": {
+      "p@5": 0.8514,
+      "p@5 cultura": 0.7714,
+      "p@5 deportes": 0.8714,
+      "p@5 economía": 0.8857,
+      "p@5 política": 0.8714,
+      "p@5 sucesos y justicia": 0.8571
+    },
+    "LSA": {
+      "p@5": 0.8486,
+      "p@5 cultura": 0.8571,
+      "p@5 deportes": 0.8286,
+      "p@5 economía": 0.8286,
+      "p@5 política": 0.8714,
+      "p@5 sucesos y justicia": 0.8571
+    },
+    "spaCy prom.": {
+      "p@5": 0.8886,
+      "p@5 cultura": 0.8571,
+      "p@5 deportes": 0.8143,
+      "p@5 economía": 0.8571,
+      "p@5 política": 0.9429,
+      "p@5 sucesos y justicia": 0.9714
+    },
+    "Word2Vec prom.": {
+      "p@5": 0.9314,
+      "p@5 cultura": 0.9714,
+      "p@5 deportes": 0.8714,
+      "p@5 economía": 0.8857,
+      "p@5 política": 0.9429,
+      "p@5 sucesos y justicia": 0.9857
+    },
+    "Word2Vec + SIF": {
+      "p@5": 0.9629,
+      "p@5 cultura": 0.9857,
+      "p@5 deportes": 0.9571,
+      "p@5 economía": 0.9571,
+      "p@5 política": 0.9143,
+      "p@5 sucesos y justicia": 1.0
+    },
+    "azar": 0.1884
+  },
+  "consultas": [
+    {
+      "consulta": "el equipo ganó el partido de la liga d…",
+      "método": "TF-IDF",
+      "puesto": 1,
+      "coseno": 0.262,
+      "id": 353
+    },
+    {
+      "consulta": "el equipo ganó el partido de la liga d…",
+      "método": "TF-IDF",
+      "puesto": 2,
+      "coseno": 0.226,
+      "id": 769
+    },
+    {
+      "consulta": "el equipo ganó el partido de la liga d…",
+      "método": "TF-IDF",
+      "puesto": 3,
+      "coseno": 0.226,
+      "id": 761
+    },
+    {
+      "consulta": "el equipo ganó el partido de la liga d…",
+      "método": "LSA",
+      "puesto": 1,
+      "coseno": 0.638,
+      "id": 102
+    },
+    {
+      "consulta": "el equipo ganó el partido de la liga d…",
+      "método": "LSA",
+      "puesto": 2,
+      "coseno": 0.636,
+      "id": 354
+    },
+    {
+      "consulta": "el equipo ganó el partido de la liga d…",
+      "método": "LSA",
+      "puesto": 3,
+      "coseno": 0.623,
+      "id": 410
+    },
+    {
+      "consulta": "la moneda europea se depreció frente a…",
+      "método": "TF-IDF",
+      "puesto": 1,
+      "coseno": 0.218,
+      "id": 208
+    },
+    {
+      "consulta": "la moneda europea se depreció frente a…",
+      "método": "TF-IDF",
+      "puesto": 2,
+      "coseno": 0.2,
+      "id": 407
+    },
+    {
+      "consulta": "la moneda europea se depreció frente a…",
+      "método": "TF-IDF",
+      "puesto": 3,
+      "coseno": 0.181,
+      "id": 125
+    },
+    {
+      "consulta": "la moneda europea se depreció frente a…",
+      "método": "LSA",
+      "puesto": 1,
+      "coseno": 0.793,
+      "id": 208
+    },
+    {
+      "consulta": "la moneda europea se depreció frente a…",
+      "método": "LSA",
+      "puesto": 2,
+      "coseno": 0.743,
+      "id": 125
+    },
+    {
+      "consulta": "la moneda europea se depreció frente a…",
+      "método": "LSA",
+      "puesto": 3,
+      "coseno": 0.721,
+      "id": 407
+    },
+    {
+      "consulta": "el juez dictó prisión para los acusado…",
+      "método": "TF-IDF",
+      "puesto": 1,
+      "coseno": 0.18,
+      "id": 404
+    },
+    {
+      "consulta": "el juez dictó prisión para los acusado…",
+      "método": "TF-IDF",
+      "puesto": 2,
+      "coseno": 0.179,
+      "id": 457
+    },
+    {
+      "consulta": "el juez dictó prisión para los acusado…",
+      "método": "TF-IDF",
+      "puesto": 3,
+      "coseno": 0.15,
+      "id": 485
+    },
+    {
+      "consulta": "el juez dictó prisión para los acusado…",
+      "método": "LSA",
+      "puesto": 1,
+      "coseno": 0.609,
+      "id": 404
+    },
+    {
+      "consulta": "el juez dictó prisión para los acusado…",
+      "método": "LSA",
+      "puesto": 2,
+      "coseno": 0.609,
+      "id": 457
+    },
+    {
+      "consulta": "el juez dictó prisión para los acusado…",
+      "método": "LSA",
+      "puesto": 3,
+      "coseno": 0.602,
+      "id": 129
+    }
+  ],
+  "clasificacion": {
+    "Word2Vec prom. + RegLog": {
+      "exactitud (5-fold)": 1.0,
+      "F1 macro (5-fold)": 1.0,
+      "exactitud (dejar uno fuera)": 0.9857
+    },
+    "TF-IDF + SVM lineal": {
+      "exactitud (5-fold)": 0.9571,
+      "F1 macro (5-fold)": 0.9566,
+      "exactitud (dejar uno fuera)": 0.9714
+    },
+    "TF-IDF + RegLog": {
+      "exactitud (5-fold)": 0.9571,
+      "F1 macro (5-fold)": 0.9566,
+      "exactitud (dejar uno fuera)": 0.9571
+    },
+    "LSA(150) + RegLog": {
+      "exactitud (5-fold)": 0.9571,
+      "F1 macro (5-fold)": 0.9565,
+      "exactitud (dejar uno fuera)": 0.9714
+    },
+    "Keras Embedding + Pooling": {
+      "exactitud (5-fold)": 0.9571,
+      "F1 macro (5-fold)": 0.9565,
+      "exactitud (dejar uno fuera)": NaN
+    },
+    "spaCy prom. + RegLog": {
+      "exactitud (5-fold)": 0.9429,
+      "F1 macro (5-fold)": 0.9415,
+      "exactitud (dejar uno fuera)": 0.9571
+    },
+    "TF-IDF + Naive Bayes": {
+      "exactitud (5-fold)": 0.9143,
+      "F1 macro (5-fold)": 0.9137,
+      "exactitud (dejar uno fuera)": 0.9571
+    }
+  },
+  "matriz_confusion": {
+    "modelo": "Word2Vec prom. + RegLog",
+    "clases": [
+      "cultura",
+      "deportes",
+      "economía",
+      "política",
+      "sucesos y justicia"
+    ],
+    "matriz": [
+      [
+        14,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        14,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        14
+      ]
+    ]
+  },
+  "errores_tfidf_reglog": [
+    {
+      "id": 51,
+      "tema real": "deportes",
+      "predicho": "cultura"
+    },
+    {
+      "id": 190,
+      "tema real": "deportes",
+      "predicho": "sucesos y justicia"
+    },
+    {
+      "id": 391,
+      "tema real": "sucesos y justicia",
+      "predicho": "deportes"
+    }
+  ],
+  "curva_aprendizaje": {
+    "tamanos": [
+      1,
+      2,
+      4,
+      8,
+      10
+    ],
+    "media": {
+      "TF-IDF + RegLog": {
+        "1": 0.6856,
+        "2": 0.81,
+        "4": 0.9167,
+        "8": 0.9667,
+        "10": 0.975
+      },
+      "TF-IDF + Naive Bayes": {
+        "1": 0.7,
+        "2": 0.8106,
+        "4": 0.9027,
+        "8": 0.9589,
+        "10": 0.9733
+      },
+      "LSA(150) + RegLog": {
+        "1": 0.6344,
+        "2": 0.7711,
+        "4": 0.8747,
+        "8": 0.9433,
+        "10": 0.9567
+      },
+      "Word2Vec prom. + RegLog": {
+        "1": 0.9118,
+        "2": 0.9433,
+        "4": 0.97,
+        "8": 0.9711,
+        "10": 0.9933
+      },
+      "spaCy prom. + RegLog": {
+        "1": 0.8041,
+        "2": 0.9006,
+        "4": 0.9307,
+        "8": 0.9467,
+        "10": 0.9633
+      }
+    },
+    "desviacion": {
+      "TF-IDF + RegLog": {
+        "1": 0.0789,
+        "2": 0.0589,
+        "4": 0.038,
+        "8": 0.0355,
+        "10": 0.031
+      },
+      "TF-IDF + Naive Bayes": {
+        "1": 0.0814,
+        "2": 0.0515,
+        "4": 0.0345,
+        "8": 0.0352,
+        "10": 0.0309
+      },
+      "LSA(150) + RegLog": {
+        "1": 0.0772,
+        "2": 0.0541,
+        "4": 0.0465,
+        "8": 0.0488,
+        "10": 0.0478
+      },
+      "Word2Vec prom. + RegLog": {
+        "1": 0.0617,
+        "2": 0.0309,
+        "4": 0.0235,
+        "8": 0.0362,
+        "10": 0.017
+      },
+      "spaCy prom. + RegLog": {
+        "1": 0.0671,
+        "2": 0.0468,
+        "4": 0.0349,
+        "8": 0.0391,
+        "10": 0.034
+      }
+    }
+  },
+  "terminos_informativos": {
+    "cultura": [
+      [
+        "obra",
+        1.575
+      ],
+      [
+        "libro",
+        1.207
+      ],
+      [
+        "artista",
+        1.021
+      ],
+      [
+        "novela",
+        1.004
+      ],
+      [
+        "música",
+        0.99
+      ],
+      [
+        "escritor",
+        0.979
+      ],
+      [
+        "literatura",
+        0.937
+      ],
+      [
+        "cultura",
+        0.873
+      ],
+      [
+        "exposición",
+        0.868
+      ],
+      [
+        "pérez",
+        0.827
+      ]
+    ],
+    "deportes": [
+      [
+        "liga",
+        1.661
+      ],
+      [
+        "disputar",
+        1.453
+      ],
+      [
+        "equipo",
+        1.379
+      ],
+      [
+        "partido",
+        1.115
+      ],
+      [
+        "torneo",
+        1.088
+      ],
+      [
+        "entrenador",
+        1.041
+      ],
+      [
+        "técnico",
+        0.888
+      ],
+      [
+        "final",
+        0.88
+      ],
+      [
+        "sánchez",
+        0.776
+      ],
+      [
+        "gol",
+        0.766
+      ]
+    ],
+    "economía": [
+      [
+        "millón",
+        1.825
+      ],
+      [
+        "ciento",
+        1.788
+      ],
+      [
+        "dólares",
+        1.477
+      ],
+      [
+        "banco",
+        1.45
+      ],
+      [
+        "euro",
+        1.079
+      ],
+      [
+        "dólar",
+        0.952
+      ],
+      [
+        "estadounidense",
+        0.859
+      ],
+      [
+        "bolsa",
+        0.852
+      ],
+      [
+        "unidad",
+        0.84
+      ],
+      [
+        "bajar",
+        0.835
+      ]
+    ],
+    "política": [
+      [
+        "gobierno",
+        1.401
+      ],
+      [
+        "socialista",
+        1.174
+      ],
+      [
+        "pp",
+        1.116
+      ],
+      [
+        "deber",
+        1.07
+      ],
+      [
+        "candidato",
+        1.025
+      ],
+      [
+        "presidente",
+        0.966
+      ],
+      [
+        "congreso",
+        0.954
+      ],
+      [
+        "psoe",
+        0.898
+      ],
+      [
+        "reforma",
+        0.847
+      ],
+      [
+        "secretario",
+        0.844
+      ]
+    ],
+    "sucesos y justicia": [
+      [
+        "civil",
+        1.298
+      ],
+      [
+        "guardia",
+        1.246
+      ],
+      [
+        "acusado",
+        1.164
+      ],
+      [
+        "herido",
+        1.031
+      ],
+      [
+        "joven",
+        0.92
+      ],
+      [
+        "dos",
+        0.891
+      ],
+      [
+        "delito",
+        0.887
+      ],
+      [
+        "accidente",
+        0.877
+      ],
+      [
+        "vehículo",
+        0.866
+      ],
+      [
+        "informar",
+        0.843
+      ]
+    ]
+  }
+}

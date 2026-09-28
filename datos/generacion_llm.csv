@@ -1,0 +1,55 @@
+id_doc,tarea,estrategia,prompt,salida
+17,continuación,zero-shot,"Continúa la siguiente noticia de agencia con dos oraciones más, manteniendo el estilo periodístico en español y sin inventar resultados distintos de los que ya aparecen.
+
+«La final de la Liga de Campeones que terminó con una victoria del Real Madrid contra el Valencia por tres goles a cero y la celebración de este triunfo en Madrid y en la ciudad francesa de París, centra la atención de los periódicos deportivos.»","Las portadas coinciden en destacar la solidez del equipo blanco, que resolvió el partido antes del tramo final y se llevó el título sin conceder ningún gol a su rival español. Los diarios dedican también amplios espacios a las imágenes de la celebración, con miles de aficionados concentrados en el centro de la capital para recibir a la plantilla."
+805,continuación,few-shot,"Continúa cada noticia con una sola oración que añada el dato que un lector esperaría a continuación.
+
+Ejemplo 1
+Noticia: «El Banco Central informó hoy de un déficit comercial de 32 millones de dólares en abril.»
+Continuación: «La entidad precisó que el resultado se explica por importaciones de 1.348 millones frente a exportaciones de 1.316 millones.»
+
+Ejemplo 2
+Noticia: «La Caja Rural del Jalón inauguró hoy su nueva oficina en Nájera.»
+Continuación: «Se trata de la décima sucursal que la entidad abre en La Rioja desde el inicio de su plan de expansión.»
+
+Ahora tú
+Noticia: «El ciclista colombiano Iván Parra, del Seguros Vitalicio, no tomará mañana la salida en la undécima etapa del Giro de Italia debido a las lesiones sufridas en una caída.»
+Continuación:","«El equipo español confirmó que el corredor sufre rotura de radio y escafoides en el brazo izquierdo, además de un fuerte golpe en la rodilla, lo que le impide continuar en carrera.»"
+420,continuación,cadena de pensamiento,"Vas a continuar una noticia municipal. Antes de escribir, razona en voz alta en tres pasos: (1) identifica quién propone y qué propone; (2) decide qué información falta para que la nota quede completa; (3) escribe entonces dos oraciones de continuación. Marca el razonamiento con «Razonamiento:» y el texto final con «Continuación:».
+
+«La coalición de EU-Els Verds en el Ayuntamiento de Palma reclamará en el próximo pleno la elaboración de una ordenanza sobre la instalación de antenas de telefonía móvil personal y otros servicios radioeléctricos de telefonía pública.»","Razonamiento: (1) Quien propone es el grupo municipal EU-Els Verds y lo que propone es una ordenanza que regule la instalación de antenas de telefonía. (2) Falta el motivo de la propuesta, el trámite en que se presentará y la reacción esperable del resto de la corporación. (3) Con eso se redacta la continuación.
+Continuación: «La propuesta se debatirá en la sesión plenaria de esta semana y busca poner orden en la expansión desordenada de este tipo de instalaciones en el término municipal. El grupo pedirá además que la futura ordenanza fije distancias mínimas respecto a centros escolares y sanitarios antes de autorizar nuevas licencias.»"
+238,titular,zero-shot,"Escribe un titular de agencia de como máximo doce palabras para esta noticia. Sin comillas y sin verbos en futuro.
+
+«La balanza comercial de Chile registró al 30 de abril pasado un déficit de 32 millones de dólares, producto de exportaciones por 1.316 millones e importaciones por 1.348 millones, informó hoy el Banco Central.»",La balanza comercial chilena cierra abril con un déficit de 32 millones de dólares
+640,titular,few-shot,"Escribe titulares breves con el patrón SUJETO + VERBO EN PRESENTE + COMPLEMENTO.
+
+Noticia: «El novillero salmantino Javier Castaño salió a hombros por la Puerta Grande de Las Ventas tras una actuación de gran valor.»
+Titular: Javier Castaño sale a hombros de Las Ventas en una tarde de valor
+
+Noticia: «Dos profesoras de la Politécnica de Huesca criticaron la política de descentralización de la Universidad de Zaragoza por repetir titulaciones.»
+Titular: Dos profesoras de Huesca critican la descentralización de la Universidad de Zaragoza
+
+Noticia: «La Caja Rural del Jalón (Cajalón) inauguró hoy su nueva oficina en la ciudad de Nájera, la décima que pone en funcionamiento en La Rioja dentro de su proceso de expansión.»
+Titular:",Cajalón abre en Nájera su décima oficina en La Rioja
+300,titular,cadena de pensamiento,"Para esta noticia de tribunales, razona primero qué elemento es informativamente central y cuál es accesorio, considera el respeto a la presunción de inocencia y solo después propón el titular. Formato: «Razonamiento:» y «Titular:».
+
+«La vinculación de la muerte del asesor fiscal Francisco Javier Sánchez Bocanegra con un hombre con el que había mantenido supuestamente relaciones sorprendió a sus amigos. Según declaró hoy un amigo durante el juicio que se celebra en la Audiencia Provincial de Málaga contra el acusado como presunto autor del crimen.»","Razonamiento: el hecho noticioso del día es la declaración de un testigo en el juicio, no la vida privada de la víctima, que es accesoria y además está atribuida a un supuesto. El acusado es presunto autor, así que el titular debe evitar afirmar su culpabilidad y debe atribuir lo dicho a la fuente que lo dijo.
+Titular: Un amigo de la víctima declara en el juicio por el crimen del asesor fiscal de Málaga"
+900,resumen en una frase,zero-shot,"Resume la noticia en una sola frase de no más de 30 palabras, sin opinión.
+
+«Las doctoras en Ciencias Químicas y profesoras de la Politécnica de Huesca, Pilar Chamorro y Elena Floris, criticaron hoy la mala política de descentralización realizada por la Universidad de Zaragoza, basada en la repetición de titulaciones. Ambas comparecieron hoy en la Comisión Especial del Modelo Educativo Universitario de Aragón, donde señalaron que el descenso del número de alumnos en el campus oscense es consecuencia de esa política.»",Dos profesoras de la Politécnica de Huesca atribuyeron ante la comisión universitaria aragonesa la caída de alumnos del campus oscense a la duplicación de titulaciones por parte de la Universidad de Zaragoza.
+533,resumen en una frase,few-shot,"Resume en una frase con el patrón «QUIÉN + QUÉ + CUÁNDO/DÓNDE».
+
+Noticia: «El Banco Central informó del déficit comercial de abril.»
+Resumen: «El Banco Central de Chile informó de un déficit comercial de 32 millones de dólares al cierre de abril.»
+
+Noticia: «Mañana a las nueve de la noche concluye el plazo para la presentación de maquetas para el concurso de DJs organizado por la Concejalía de Juventud, con la colaboración de Radio Rivas y la Asociación Jarama, que se celebrará el viernes a las 21.30 en la carpa del recinto ferial.»
+Resumen:","«La Concejalía de Juventud cierra mañana por la noche el plazo de entrega de maquetas para su concurso de DJs, que se celebrará el viernes en la carpa del recinto ferial.»"
+712,reescritura,zero-shot,"Reescribe este fragmento de crónica taurina en un registro informativo neutro, sin adjetivación valorativa y comprensible para alguien que no sigue los toros.
+
+«El novillero salmantino Javier Castaño conoce desde hoy la gloria del toreo, de la salida a hombros por la Puerta Grande de Las Ventas, reconocimiento a una emocionantísima actuación, de tan buena compostura como valor.»","El novillero salmantino Javier Castaño salió a hombros por la Puerta Grande de la plaza de Las Ventas, en Madrid, el máximo reconocimiento que el público concede en ese coso, tras su actuación de esta tarde."
+51,reescritura,cadena de pensamiento,"Reescribe la noticia eliminando la descripción física de la persona y cualquier expresión sexista, conservando los hechos verificables. Razona primero qué elementos sobran y por qué; después entrega el texto. Formato: «Razonamiento:» y «Reescritura:».
+
+«El tenista brasileño Gustavo Kuerten, actual número dos del mundo, terminó su romance de varios meses con la modelo Vanessa Schultz porque ésta decidió posar desnuda para un ensayo de la edición nacional de la revista Playboy, informa el semanario Veja. Schultz, una escultural jovencita de ojos y cabellos castaños, será la portada de la edición de julio.»","Razonamiento: la descripción física («escultural jovencita de ojos y cabellos castaños») no aporta información y cosifica a la persona; el diminutivo «jovencita» añade una valoración innecesaria. Los hechos verificables son la ruptura, su motivo según la fuente, la portada de julio y la atribución al semanario Veja, que debe conservarse porque la noticia no es de primera mano.
+Reescritura: «El tenista brasileño Gustavo Kuerten, número dos del mundo, puso fin a su relación de varios meses con la modelo Vanessa Schultz, según el semanario Veja, que atribuye la ruptura a la decisión de ella de posar para la edición brasileña de Playboy. Schultz protagonizará la portada del número de julio de esa revista.»"

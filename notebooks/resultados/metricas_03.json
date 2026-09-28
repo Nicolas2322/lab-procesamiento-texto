@@ -1,0 +1,458 @@
+{
+  "corpus": {
+    "Noticias": 998,
+    "Oraciones anotadas": 11755,
+    "Oraciones utilizables (3–80 tokens)": 10068,
+    "Oraciones de la muestra de evaluación": 3000,
+    "Tokens de la muestra": 107033,
+    "Etiquetas EAGLES distintas": 60
+  },
+  "rendimiento": {
+    "segundos": 16.59,
+    "tokens_por_segundo": 6452
+  },
+  "mapeo": {
+    "etiquetas_eagles": 60,
+    "sin_mapeo": 0,
+    "categorias_upos": 14
+  },
+  "pos": {
+    "tokens_evaluados": 107033,
+    "exactitud_global": 0.8546,
+    "exactitud_por_categoria": {
+      "NOUN": 0.685,
+      "ADP": 0.99,
+      "DET": 0.975,
+      "PUNCT": 0.997,
+      "VERB": 0.797,
+      "ADJ": 0.633,
+      "PRON": 0.852,
+      "NUM": 0.879,
+      "ADV": 0.944,
+      "CCONJ": 0.997,
+      "SCONJ": 0.903,
+      "AUX": 0.985,
+      "PROPN": 0.989,
+      "INTJ": 0.025
+    },
+    "tokens_por_categoria": {
+      "NOUN": 26100,
+      "ADP": 17954,
+      "DET": 14075,
+      "PUNCT": 13848,
+      "VERB": 9535,
+      "ADJ": 9498,
+      "PRON": 4150,
+      "NUM": 2651,
+      "ADV": 2571,
+      "CCONJ": 2497,
+      "SCONJ": 1886,
+      "AUX": 1681,
+      "PROPN": 547,
+      "INTJ": 40
+    },
+    "confusiones": [
+      {
+        "oro": "NOUN",
+        "spacy": "PROPN",
+        "tokens": 7738
+      },
+      {
+        "oro": "ADJ",
+        "spacy": "PROPN",
+        "tokens": 2786
+      },
+      {
+        "oro": "VERB",
+        "spacy": "PROPN",
+        "tokens": 801
+      },
+      {
+        "oro": "VERB",
+        "spacy": "AUX",
+        "tokens": 579
+      },
+      {
+        "oro": "ADJ",
+        "spacy": "NOUN",
+        "tokens": 545
+      },
+      {
+        "oro": "PRON",
+        "spacy": "SCONJ",
+        "tokens": 327
+      },
+      {
+        "oro": "DET",
+        "spacy": "PRON",
+        "tokens": 325
+      },
+      {
+        "oro": "NOUN",
+        "spacy": "ADJ",
+        "tokens": 318
+      },
+      {
+        "oro": "VERB",
+        "spacy": "ADJ",
+        "tokens": 306
+      },
+      {
+        "oro": "VERB",
+        "spacy": "NOUN",
+        "tokens": 231
+      },
+      {
+        "oro": "PRON",
+        "spacy": "NUM",
+        "tokens": 222
+      },
+      {
+        "oro": "NUM",
+        "spacy": "NOUN",
+        "tokens": 187
+      }
+    ],
+    "relajaciones": {
+      "estricta": 0.8546,
+      "NOUN≡PROPN": 0.927,
+      "VERB≡AUX": 0.86,
+      "DET≡PRON": 0.8579,
+      "ADJ≡NOUN": 0.8627
+    },
+    "exactitud_acumulada": {
+      "estricta": 0.8546,
+      "NOUN≡PROPN": 0.927,
+      "VERB≡AUX": 0.9324,
+      "DET≡PRON": 0.9357,
+      "ADJ≡NOUN": 0.9438
+    },
+    "exactitud_fuera_entidades": 0.9519,
+    "exactitud_dentro_entidades": 0.1852,
+    "tokens_en_entidades": 13578,
+    "desacuerdos_en_entidades": 11063,
+    "desacuerdos_totales": 15561,
+    "verbo_a_aux": {
+      "tokens": 579,
+      "formas": {
+        "está": 97,
+        "están": 46,
+        "puede": 39,
+        "podría": 30,
+        "debe": 29,
+        "pueden": 22,
+        "estará": 20,
+        "debería": 17
+      }
+    },
+    "linea_base": {
+      "vocabulario": 22839,
+      "exactitud": 0.9239,
+      "cobertura": 0.9551,
+      "exactitud_conocidas": 0.9521,
+      "exactitud_desconocidas": 0.3234,
+      "spacy_desconocidas": 0.656,
+      "exactitud_indultada": 0.9285,
+      "exactitud_fuera_entidades": 0.9398,
+      "desconocidas_en_entidades": 0.2778,
+      "desconocidas_indultado_spacy": 0.7922
+    },
+    "spacy_indultada": 0.927
+  },
+  "parsing": {
+    "relaciones_distintas": 31,
+    "profundidad_media": 5.85,
+    "profundidad_maxima": 15,
+    "longitud_media": 35.7,
+    "correlacion_longitud_profundidad": 0.764,
+    "correlacion_log": 0.775,
+    "ajuste_log": {
+      "a": 2.637,
+      "b": -3.094
+    },
+    "oraciones_con_varias_raices": 28,
+    "top_relaciones": {
+      "case": 16081,
+      "det": 14010,
+      "punct": 13847,
+      "nmod": 8429,
+      "amod": 5648,
+      "nsubj": 5314,
+      "flat": 5288,
+      "obj": 5193,
+      "obl": 4534,
+      "mark": 3214
+    },
+    "tripletas_svo": 1236,
+    "tripletas_distintas": 1184,
+    "pares_verbo_objeto": 3762,
+    "verbos_analizados": 7768,
+    "cobertura_svo": 0.1591,
+    "top_verbos_svo": {
+      "tener": 73,
+      "presentar": 22,
+      "dar": 21,
+      "pedir": 20,
+      "hacer": 18,
+      "mantener": 15,
+      "destacar": 14,
+      "ofrecer": 13
+    },
+    "ambiguedad_sp": [
+      {
+        "oración": "La policía detuvo al sospechoso con una orden judicial.",
+        "sintagma": "con … orden",
+        "se adjunta a": "detuvo",
+        "relación": "obl",
+        "¿acierta?": "sí"
+      },
+      {
+        "oración": "La policía detuvo al sospechoso con antecedentes penales.",
+        "sintagma": "con … antecedentes",
+        "se adjunta a": "detuvo",
+        "relación": "obl",
+        "¿acierta?": "NO"
+      },
+      {
+        "oración": "El ministro anunció la reforma en el Congreso.",
+        "sintagma": "en … Congreso",
+        "se adjunta a": "anunció",
+        "relación": "obl",
+        "¿acierta?": "sí"
+      },
+      {
+        "oración": "El ministro anunció la reforma del sistema de pensiones en el Congreso.",
+        "sintagma": "en … Congreso",
+        "se adjunta a": "reforma",
+        "relación": "nmod",
+        "¿acierta?": "NO"
+      },
+      {
+        "oración": "Vio al hombre con el telescopio.",
+        "sintagma": "con … telescopio",
+        "se adjunta a": "Vio",
+        "relación": "obl",
+        "¿acierta?": "—"
+      }
+    ]
+  },
+  "ner": {
+    "entidades_oro": 7716,
+    "entidades_predichas": 7914,
+    "global": {
+      "precision": 0.6466,
+      "exhaustividad": 0.6632,
+      "f1": 0.6548
+    },
+    "macro_f1": 0.6152,
+    "por_tipo": {
+      "PER": {
+        "precision": 0.8328,
+        "exhaustividad": 0.8365,
+        "f1": 0.8346,
+        "oro": 1780
+      },
+      "ORG": {
+        "precision": 0.7872,
+        "exhaustividad": 0.5631,
+        "f1": 0.6566,
+        "oro": 3088
+      },
+      "LOC": {
+        "precision": 0.5087,
+        "exhaustividad": 0.816,
+        "f1": 0.6267,
+        "oro": 1973
+      },
+      "MISC": {
+        "precision": 0.371,
+        "exhaustividad": 0.3189,
+        "f1": 0.343,
+        "oro": 875
+      }
+    },
+    "solo_tramo": {
+      "precision": 0.835,
+      "exhaustividad": 0.8564,
+      "f1": 0.8456
+    },
+    "clases_error": {
+      "tipo": 1491,
+      "omisión": 267,
+      "frontera": 841,
+      "espuria (falso positivo)": 517
+    },
+    "confusion_tipo": {
+      "ORG->LOC": 626,
+      "ORG->MISC": 192,
+      "MISC->ORG": 136,
+      "PER->LOC": 133,
+      "MISC->LOC": 113,
+      "ORG->PER": 101,
+      "MISC->PER": 53,
+      "PER->MISC": 38
+    },
+    "ejemplos_error": [
+      {
+        "clase": "tipo",
+        "oro": "Parlamento Vasco",
+        "tipo oro": "ORG",
+        "predicho": "Parlamento Vasco",
+        "tipo predicho": "LOC",
+        "contexto": "por Ley en el Parlamento Vasco \" ."
+      },
+      {
+        "clase": "tipo",
+        "oro": "El Segre",
+        "tipo oro": "ORG",
+        "predicho": "El Segre",
+        "tipo predicho": "LOC",
+        "contexto": "el centro de menores El Segre \" no es un"
+      },
+      {
+        "clase": "tipo",
+        "oro": "Leeds",
+        "tipo oro": "ORG",
+        "predicho": "Leeds",
+        "tipo predicho": "LOC",
+        "contexto": "los dos hinchas del Leeds inglés que fallecieron apuñalados"
+      },
+      {
+        "clase": "tipo",
+        "oro": "Belgrado",
+        "tipo oro": "ORG",
+        "predicho": "Belgrado",
+        "tipo predicho": "LOC",
+        "contexto": "1999 y obligó a Belgrado a retirar sus tropas"
+      },
+      {
+        "clase": "tipo",
+        "oro": "Odón Elorza",
+        "tipo oro": "PER",
+        "predicho": "Odón Elorza",
+        "tipo predicho": "LOC",
+        "contexto": "ofreció junto al alcalde Odón Elorza , que esta medida"
+      },
+      {
+        "clase": "tipo",
+        "oro": "Marcos",
+        "tipo oro": "PER",
+        "predicho": "Marcos",
+        "tipo predicho": "MISC",
+        "contexto": "excesivo \" , según Marcos , al que le"
+      },
+      {
+        "clase": "tipo",
+        "oro": "Pirineos",
+        "tipo oro": "MISC",
+        "predicho": "Pirineos",
+        "tipo predicho": "LOC",
+        "contexto": "noche y mañana los Pirineos y sus pasajeros serán"
+      },
+      {
+        "clase": "tipo",
+        "oro": "Agricultura. Pesca",
+        "tipo oro": "MISC",
+        "predicho": "Agricultura. Pesca",
+        "tipo predicho": "PER",
+        "contexto": "el ministro marroquí de Agricultura. Pesca , y espero que"
+      },
+      {
+        "clase": "frontera",
+        "oro": "Cádiz",
+        "tipo oro": "LOC",
+        "predicho": "Cádiz de la Consejería de Asuntos Sociales",
+        "tipo predicho": "LOC",
+        "contexto": "La delegada en Cádiz de la Consejería de"
+      },
+      {
+        "clase": "frontera",
+        "oro": "Consejería de Asuntos Sociales",
+        "tipo oro": "ORG",
+        "predicho": "Cádiz de la Consejería de Asuntos Sociales",
+        "tipo predicho": "LOC",
+        "contexto": "en Cádiz de la Consejería de Asuntos Sociales , Prudencia Rebollo ,"
+      },
+      {
+        "clase": "frontera",
+        "oro": "Guerra Civil",
+        "tipo oro": "MISC",
+        "predicho": "Guerra Civil española",
+        "tipo predicho": "MISC",
+        "contexto": "una bomba de la Guerra Civil española , han informado"
+      },
+      {
+        "clase": "frontera",
+        "oro": "estadio del Milenio",
+        "tipo oro": "LOC",
+        "predicho": "Milenio de Cardiff",
+        "tipo predicho": "MISC",
+        "contexto": "amistoso disputado en el estadio del Milenio de Cardiff ante 72.500"
+      },
+      {
+        "clase": "frontera",
+        "oro": "Cardiff",
+        "tipo oro": "LOC",
+        "predicho": "Milenio de Cardiff",
+        "tipo predicho": "MISC",
+        "contexto": "estadio del Milenio de Cardiff ante 72.500 espectadores ."
+      },
+      {
+        "clase": "omisión",
+        "oro": "Bilbao",
+        "tipo oro": "LOC",
+        "predicho": "—",
+        "tipo predicho": "—",
+        "contexto": "EFE RS-c Bilbao , 23 may ("
+      },
+      {
+        "clase": "omisión",
+        "oro": "Justicia",
+        "tipo oro": "MISC",
+        "predicho": "—",
+        "tipo predicho": "—",
+        "contexto": "que el ministro de Justicia lo ordenó \" ."
+      }
+    ],
+    "por_longitud": {
+      "entidades": {
+        "1 token": 4646,
+        "2": 1668,
+        "3": 717,
+        "4 o más": 685
+      },
+      "exhaustividad": {
+        "1 token": 0.6576,
+        "2": 0.7506,
+        "3": 0.6667,
+        "4 o más": 0.4847
+      },
+      "detección": {
+        "1 token": 0.9561,
+        "2": 0.9838,
+        "3": 0.9791,
+        "4 o más": 0.9693
+      }
+    },
+    "por_frecuencia": {
+      "entidades": {
+        "1 vez": 2951,
+        "2–3": 1615,
+        "4–10": 1283,
+        "más de 10": 1867
+      },
+      "exhaustividad": {
+        "1 vez": 0.6269,
+        "2–3": 0.6452,
+        "4–10": 0.661,
+        "más de 10": 0.7375
+      },
+      "detección": {
+        "1 vez": 0.9644,
+        "2–3": 0.9529,
+        "4–10": 0.9525,
+        "más de 10": 0.9866
+      }
+    }
+  }
+}

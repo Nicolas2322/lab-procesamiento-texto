@@ -1,0 +1,27 @@
+categoria,frase1,frase2,similitud
+paráfrasis,El Gobierno aprobó la reforma de la ley de educación.,La reforma educativa fue aprobada por el Ejecutivo.,4.6
+paráfrasis,Las lluvias han causado al menos 28 muertos en Colombia.,Al menos 28 personas murieron por las inundaciones en Colombia.,4.4
+paráfrasis,El Real Madrid ganó la final de la Liga de Campeones.,El Real Madrid se proclamó campeón de Europa.,4.2
+paráfrasis,Hoy se inaugura en Alcorcón una exposición de esculturas de vidrio.,Una muestra de esculturas en vidrio abre sus puertas hoy en Alcorcón.,4.4
+brecha léxica,El euro bajó frente al dólar en la sesión de hoy.,La moneda europea se depreció hoy respecto a la divisa estadounidense.,4.6
+brecha léxica,El médico atendió al paciente en urgencias.,El doctor examinó al enfermo en la sala de emergencias.,4.4
+brecha léxica,Detuvieron a tres jóvenes por tráfico de drogas.,La policía arrestó a tres muchachos que vendían estupefacientes.,4.2
+brecha léxica,El fiscal pide seis años de cárcel para los acusados.,La Fiscalía solicita una condena de seis años de prisión para los procesados.,4.6
+brecha léxica,El tenista brasileño es el número dos del mundo.,El jugador de tenis de Brasil ocupa el segundo puesto de la clasificación mundial.,4.6
+negación o antónimo,El acuerdo fue aprobado por el Congreso.,El acuerdo no fue aprobado por el Congreso.,1.5
+negación o antónimo,El ciclista sufrió una fractura en la caída.,El ciclista no sufrió ninguna lesión en la caída.,1.5
+negación o antónimo,La empresa aumentó sus beneficios este año.,La empresa redujo sus beneficios este año.,1.5
+negación o antónimo,Las reservas internacionales de Chile aumentaron en mayo.,Las reservas internacionales de Chile disminuyeron en mayo.,1.5
+roles invertidos,El Real Madrid venció al Valencia.,El Valencia venció al Real Madrid.,1.5
+roles invertidos,El banco compró la empresa de telefonía.,La empresa de telefonía compró el banco.,1.5
+detalle cambiado,Una mujer paseaba al perro por el parque.,Un hombre paseaba al perro por el parque.,2.8
+detalle cambiado,El concierto se celebrará mañana en Sabadell.,El concierto se celebrará mañana en Valencia.,2.8
+mismo tema,El Real Madrid ganó la final de la Liga de Campeones.,El Valencia fichó a un nuevo entrenador.,1.2
+mismo tema,El Banco Central subió los tipos de interés.,La bolsa de Nueva York abrió con pérdidas.,1.4
+mismo tema,El ministro de Justicia visitó Francia.,El ministro de Agricultura se reunió con pescadores marroquíes.,1.0
+polisemia,El banco del parque estaba recién pintado.,El banco subió las comisiones a sus clientes.,0.4
+polisemia,La planta de la fábrica cerró sus puertas.,Riega la planta del salón dos veces por semana.,0.2
+polisemia,El partido terminó en empate.,El partido convocó una rueda de prensa.,0.4
+sin relación,La orquesta interpretó obras de Stravinsky.,Las reservas de oro de Rusia subieron.,0.0
+sin relación,El secuestrador saltó en paracaídas sobre Manila.,La exposición de esculturas de vidrio se inaugura hoy.,0.0
+sin relación,El Parlamento debatió la ley de extranjería.,El ciclista italiano se fracturó el fémur.,0.0
