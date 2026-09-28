@@ -35,6 +35,15 @@ material de clase de [`lmoroney/dlaicourse`](https://github.com/lmoroney/dlaicou
 | 16 | Generación de texto usando LLM | `06_generacion_text_mining` | 3 |
 | 17 | Text mining | `06_generacion_text_mining` | 4 |
 
+## Abrir en Google Colab
+
+- **01_normalizacion_stopwords_stemming_lematizacion** — [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolas2322/lab-procesamiento-texto/blob/main/notebooks/01_normalizacion_stopwords_stemming_lematizacion.ipynb)
+- **02_term_frequency_idf** — [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolas2322/lab-procesamiento-texto/blob/main/notebooks/02_term_frequency_idf.ipynb)
+- **03_pos_parsing_ner** — [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolas2322/lab-procesamiento-texto/blob/main/notebooks/03_pos_parsing_ner.ipynb)
+- **04_similitud_clasificacion** — [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolas2322/lab-procesamiento-texto/blob/main/notebooks/04_similitud_clasificacion.ipynb)
+- **05_qa_resumen_traduccion** — [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolas2322/lab-procesamiento-texto/blob/main/notebooks/05_qa_resumen_traduccion.ipynb)
+- **06_generacion_text_mining** — [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolas2322/lab-procesamiento-texto/blob/main/notebooks/06_generacion_text_mining.ipynb)
+
 ## Notebooks
 
 | Notebook | Contenido |
@@ -101,7 +110,7 @@ lab-procesamiento-texto/
 
 ### Google Colab
 
-Abrir cualquier notebook y ejecutar todas las celdas. La primera celda detecta Colab, clona este repositorio
+Usar los enlaces de la sección «Abrir en Google Colab» y ejecutar todas las celdas. La primera celda detecta Colab, clona este repositorio
 para disponer del paquete `pln_lab` y descarga el modelo `es_core_news_md` de spaCy; el corpus se descarga con
 NLTK. Los notebooks son autocontenidos y no dependen entre sí.
 
@@ -115,5 +124,18 @@ pip install -r requirements.txt
 python -m spacy download es_core_news_md
 jupyter notebook notebooks/
 ```
+
+### Reproducibilidad y manejo de datos
+
+- Semilla fija (`SEED = 42`) en todos los notebooks; `Word2Vec` se entrena con un solo hilo porque con
+  varios gensim no es determinista pese a la semilla.
+- El código reutilizable vive en `src/pln_lab/` y los notebooks solo orquestan: ningún notebook duplica
+  lógica de otro.
+- Los datos de partida se descargan de forma programática (NLTK) y los conjuntos anotados a mano están
+  versionados en `datos/`; los productos derivados pesados quedan fuera del repositorio (`.gitignore`) y se
+  regeneran ejecutando los notebooks.
+- Cada notebook vuelca sus métricas a `notebooks/resultados/metricas_NN.json`, de modo que las cifras del
+  informe son trazables hasta la celda que las produjo.
+- `requirements.txt` fija las versiones mínimas de las bibliotecas.
 
 Probado con Python 3.11, spaCy 3.8, NLTK 3.10, scikit-learn 1.8, gensim 4.4 y TensorFlow 2.20 (CPU).
